@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Preview Page </title>
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+<style>
+    h1 {
+        font-family: 'Pixelify Sans';
+        text-align: center;
+        font-size: 120px;
+        margin-bottom: 2%;
+        text-shadow: 3px 3px 10px black;
+        color: rgb(242, 247, 236);
+        margin-top: 1%;
+        
+    }
+    body {
+            background-image: url('preview.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+    .quest-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 50px;
+        max-width: 1200px;
+        width: 95%;
+        margin: auto;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .quest-box {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        
+        min-height: 130px; 
+        border: 3px solid #000000; 
+        box-shadow: 8px 8px 0 black;
+        
+        color: white;
+        text-decoration: none; 
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        transition: transform 0.2s; 
+    }
+    .quest-box .level {
+        line-height: 2;
+        text-align: center;
+        font-size: 20px
+    }
+
+    .quest-box .text {
+        text-align: center;
+    }
+
+
+    #quest-1 { background-color: #e74c3c; }
+    #quest-2 { background-color: #3498db; }
+    #quest-3 { background-color: #9b59b6; }
+    #quest-4 { background-color: #f39c12; }
+    #quest-5 { background-color: #1abc9c; }
+    #quest-6 { background-color: #d35400; }
+
+    .quest-box:hover {
+        transform: scale(1.05); 
+        box-shadow: 8px 8px 0 black;
+    }
+
+</style>
+
+<body>
+    <h1> Choose a Level </h1>
+    <div class="quest-grid">
+        <a href="PORT1.html" class="quest-box" id="quest-1">
+            <span class="level"> LEVEL 1</span>
+            <span class="text">Computer Science as Discipline, Computing Disciplines and Majors</span>
+        </a>
+
+        <a href="PORT2.html" class="quest-box" id="quest-2">
+            <span class="level">LEVEL 2 </span>
+            <span class="text">QData, Information, and Information Systems</span>
+        </a>
+
+        <a href="PORT3.html" class="quest-box" id="quest-3">
+            <span class="level">LEVEL 3 </span>
+            <span class="text">Number Systems</span>
+        </a>
+
+        <a href="PORT4.html" class="quest-box" id="quest-4">
+            <span class="level">LEVEL 4</span>
+            <span class="text">Computer Hardware and Software: Their Implementation in the different institutions in the community</span>
+        </a>
+
+        <a href="PORT5.html" class="quest-box" id="quest-5">
+            <span class="level">LEVEL 5</span>
+            <span class="text">Comparative Study On Different Types Of Motherboards</span>
+        </a>
+
+        <a href="PORT6.html" class="quest-box" id="quest-6">
+            <span class="level">LEVEL 6</span>
+            <span class="text">Comparative Study On Different Types Of Computers</span>
+        </a>
+        <br>
+    </div>
+</body>
+</html>
